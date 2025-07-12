@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   background-color: rgb(24, 24, 24);
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    margin-bottom: 10px;
+    background-image: url('stars.png');
+}
+
+.bg-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.cross {
+     display: none;
+}
+
+.menu {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+  display: flex;
+   justify-content: space-around;
+  color: white;
+  text-align: center;
+   padding: 20px 0;
+  align-items: baseline;
+}
+
+.heading {
+    text-decoration-line: underline;
+    text-decoration-color: orange;
+  text-underline-offset: 7px;
+  font-size: 19px;
+}
+
+
+.list ul{
+    display: flex;
+    list-style: none;
+  
+}
+
+.list li {
+    margin-right: 3vw ;
+}
+
+.list li a{
+       color: white;
+       text-decoration: none;
+    font-size: 19px;
+}
+
+.list li a:hover{
+    color: orange;
+}
+
+.section-1-container {
+    /* border: 2px solid white; */
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-1 {
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 88vw;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#section-1 h4 {
+    color: white;
+    font-size: 18px;
+}
+
+.section-1 button {
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: transparent;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 19px;
+    cursor: pointer;
+}
+.section-1 button:hover {
+    border-color: red;
+    color: white;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.icon {
+    margin-top: 1vw;
+} .fa-brands {margin-left: 7px; cursor: pointer;}
+.fa-brands:hover {color: orange;}
+
+.viewmore {
+    color: white;
+    font-size: 25px;
+    color: rgb(240, 207, 145);
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+}
+
+
+.section-2-container {
+    /* border: 2px solid white; */
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+       font-size: 25px;
+}
+
+
+.section-2 {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 75vw;
+    text-align: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.section-2 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.section-2 p {
+    color: white;
+     font-size: 20px;
+     margin-top: 20px;
+}
+
+.project,.skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-3-container,.section-4-container {
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px ;
+    /* border: 2px solid white; */
+    width: 99%;
+    place-items: center;
+}
+
+.projectbox {
+    padding-top: 20px;
+    display: flex;
+  gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid white; */
+    width: 90%;
+    height: 350px;
+}
+
+.projectbox img {
+    width: 250px;
+      height: 150px;
+    border-radius: 20px;
+    border: 2px solid red;
+  
+}
+
+.project h2 {
+    color: yellow;
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+}
+
+.projectbox p {
+    color: white;
+    text-align: center;
+    font-size: 19px;
+}
+
+
+.project button {
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: transparent;
+    margin: 20px auto;
+    padding: 7px 15px;
+    font-size: 19px;
+    cursor: pointer;
+}
+.projectbox button:hover {
+    border-color: red;
+    color: white;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.skills {
+    
+    height: 90vh;
+}
+
+.skillbox {
+    padding-top: 20px;
+    display: flex;
+  gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid white; */
+    width: 100%;
+    height: 350px;
+    margin: 10px 0;
+}
+
+.skillbox-fit {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+.web1 {
+    display: flex;
+    gap: 10px;
+    text-align: start;
+}
+
+.web1 {
+    color: orange;
+}
+
+.line {
+    border: 2px solid white;
+    width: 150px;
+    border-radius: 10px;
+    height: 15px;
+}
+
+.line hr {
+    border-radius: 10px;
+}
+
+.skillimage1{
+    align-items: center;
+    display: flex;
+    color: orange;
+}
+
+.skill-image img {
+    width: 100px;
+    border-radius: 20px ;
+}
+
+.contact{
+    /* border: 2px solid white; */
+    width: 99%;
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.section-5{
+    /* border: 2px solid white; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 20px;
+}
+
+.contact-1,.contact-2 {
+    /* border: 2px solid orange; */
+    width: 100%;
+    height: 95%;
+    border-radius: 20px ;
+    margin-top: 10px;
+    
+}
+
+.contact-1 {
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    align-items: center;
+    background-color: rgb(105, 69, 3);
+}
+
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.details {
+    display: grid;
+  grid-template-columns: auto 1fr;
+    height: 50px; 
+    font-size: 20px;
+   width: auto;
+  align-items: center;
+    
+}
+
+.contact-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+height: 100%;
+font-size: 22px;
+color: white;
+ margin-top: 20px;
+}
+
+input {
+   
+margin-bottom: 20px ;
+   padding: 5px;
+    width: 250px;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+    border-radius: 10px;
+    background-color: rgb(113, 113, 113);
+    border: 2px solid transparent;
+    color: white;
+}
+input:hover {
+    border-color: white;
+}
+
+textarea {
+     margin: 5px auto;
+   padding: 10px;
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+     background-color: rgb(113, 113, 113);
+   font-size: 19px;
+    border-radius: 20px;
+    background-color: rgb(113, 113, 113);
+    border: 2px solid transparent;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+textarea::placeholder, input::placeholder {
+    color: rgb(188, 187, 187);
+}
+
+#submit {
+    margin: auto;
+       padding: 10px 20px;
+    background-color: yellow;
+     color: black;
+     border: 2px solid transparent;
+     border-radius: 10px;
+     font-size: 19px;
+     font-weight: 500;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     cursor: pointer;
+}
+
+#submit:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    color: yellow;
+    border-color: yellow;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 11px;
+   padding: 10px 0;
+}

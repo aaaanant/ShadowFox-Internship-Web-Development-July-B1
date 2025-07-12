@@ -1,0 +1,106 @@
+@media(max-width:700px) {
+
+
+   .cross {
+    display: none;
+   }
+
+   .menu {
+    display: block;
+   }
+
+    .list {
+    display: none;
+    
+  }
+
+  .list.show {
+    display: block;    
+  }
+
+  .list.show ul {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+  }
+
+  .list.show li {
+    display: flex;
+    margin-top: 10px;
+    font-size: 15px;
+
+  }
+
+    .section-1-container {
+    height: 87vh;
+}
+
+    .section-1 {
+        width: 79%;
+        font-size: 16px;
+       }
+
+       .section-1 h1 {
+        margin: 15px 0px;
+        
+       }
+
+       #typewriter {
+        margin: 10px 0px;
+       }
+     
+.section-1 button {
+    margin: 30px auto;
+}
+
+.icon {
+    margin-top: 1vw;
+} .fa-brands {margin-left: 7px; font-size: 30px; }
+
+
+.section-2-container {
+    height: 85vh;
+    width: 100vw;
+
+}
+
+    .section-2 {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .section-2 p {
+        font-size: 17px;
+    }
+
+    .skills {
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    
+.skillbox {
+    width: 100%;
+    height: 100%;
+}
+
+.contact {
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+
+}
+
+@media (max-width: 900px){
+    
+    .contact {
+        height: 100%;
+        margin-bottom: 50px;
+    }
+
+.section-5 {
+  
+         grid-template-columns: 1fr;
+}
+
+}
