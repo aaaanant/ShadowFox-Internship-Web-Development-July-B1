@@ -110,6 +110,12 @@ nav {
     font-size: 19px;
     cursor: pointer;
 }
+
+.section-1 button a {
+    color: white;
+    text-decoration: none;
+}
+
 .section-1 button:hover {
     border-color: red;
     color: white;
@@ -226,8 +232,14 @@ nav {
     margin: 20px auto;
     padding: 7px 15px;
     font-size: 19px;
-    cursor: pointer;
+    cursor: pointer;  
 }
+
+.projectbox button a {
+    color: white;
+    text-decoration: none;
+}
+
 .projectbox button:hover {
     border-color: red;
     color: white;
