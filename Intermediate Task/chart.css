@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.back-button {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: orange;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.back-button a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.back-button a:hover {
+    color: orange;
+}
+
+.back-button:hover {
+    background-color: transparent;
+    color: orange;
+    border-color: orange;
+    transition: 0.5s;
+}
+
+.back-button i {
+    margin-right: 10px;
+}
+
+.cart-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    place-items: center;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    width: 100%;
+    height: 90vh;
+    /* border: 2px solid white; */
+}
+
+.shopping-cart-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid  white; */
+    width: 90%;
+    height: 100%;
+}
+
+.shopping-cart-collab {
+ border: 2px solid white;
+ background-color: rgb(9, 9, 9);
+    width: 90%;
+    border-radius: 8px;
+    height: 100%;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.shopping-cart-collab h2 {
+    color: orange;
+    margin-bottom: 10px;
+
+}
+
+.shopping-cart-collab button {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: green;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.5s;
+    color: white;
+}
+.shopping-cart-collab button:hover {
+    background-color: transparent;
+    color: green;
+    border-color: green;
+}
+
+.shopping-cart-collab p {
+    margin-top: 10px;
+}
+
+.member {
+    border: 2px solid orange;
+    border-radius: 10px;
+    height: 30%;
+    padding: 20px;
+}
+
+.fa-cart-shopping {
+    color: orange;
+    font-size: 150px;
+}
+
+.empty-message {
+    color: grey;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.fa-face-smile {
+    margin-left: 5px;
+}
+
+.empty-message button {
+ padding: 10px 20px;
+    font-size: 15px;
+    background-color: orange;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin: 10px;   
+}
+
+.empty-message button a{
+    
+    color: black;
+    text-decoration: none;
+    font-weight: 550;
+}
+.empty-message button:hover {
+    background-color: rgb(214, 140, 1);
+}

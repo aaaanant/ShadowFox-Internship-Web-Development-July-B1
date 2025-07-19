@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+     justify-content:space-between;
+    padding: 10px 13px;
+     position: fixed;
+top: 0;
+    width: 100%;
+    background-color: black;
+}
+
+nav h1 {
+   display: flex;   
+   font-size: 35px;
+   color: orange;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+
+ .list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.list a {
+    color: white;
+    text-decoration-line: none;
+    margin: 0 20px;
+    font-size: 25px;
+}
+
+.list a:hover {
+    color: orange;
+}
+
+.list button {
+    padding: 5px 7px;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.list button:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    color: red;
+    border-color: red;
+}
+
+.search {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 15px;
+    height: 30px;
+    width: 150px;
+    padding-left: 5px;
+    background-color: rgb(79, 78, 78);
+    color: white;
+   border-color: transparent;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.fa-magnifying-glass {
+color: rgb(150, 150, 150);
+    font-size: 23px;
+    background-color: rgb(79, 78, 78);
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+}
+
+.fa-cart-shopping {
+    font-size: 25px;
+    cursor: pointer;
+    color: yellow;
+}
+
+.fa-cart-shopping:hover {
+    color: orange;
+}
+
+.menu {
+    display: none;
+    color: white;
+}
+
+.fa-bars {
+    font-size: 19px;
+}
+
+.sale-banner {
+    color: orange;
+       background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('https://nobero.com/cdn/shop/files/TRAVEL_HOODIE_2000_x_521_px.jpg?v=1679922010&width=2000');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    height: 400px;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     font-size: 22px;
+}
+
+.sale-banner button {
+    margin: 10px auto;
+    background-color: orange;
+    border: 2px solid transparent ;
+    cursor: pointer;
+  padding: 5px 14px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.sale-banner button:focus {
+    outline: none;
+}
+
+.sale-banner button:hover {
+    border-color: orange;
+    background-color: transparent;
+    color: orange;
+    transition: 0.5s;
+}
+
+.row-1 , .row-2 {
+    margin-top: 20px;
+}
+
+.row-1 h1 , .row-2 h1 {
+    color: white;
+    padding-left: 5vw;
+}
+
+.trending-button, .suggestion-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 5vw ;
+}
+
+.trending-button button, .suggestion-button button {
+    border-radius: 50%;
+    padding: 8px 15px ;
+    border: 2px solid transparent;
+    background-color: orange;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.trending-button button:hover , .suggestion-button button:hover{
+    background-color: transparent;
+    border-color: orange;
+    color: orange;
+}
+ 
+#trending-row, #suggest-row {
+    /* border: 2px solid white; */
+    height: 350px;
+    width: 100%;
+    overflow-x: auto; 
+    scroll-behavior: smooth;
+    display: flex;
+   
+}
+
+#trending-row::-webkit-scrollbar,
+#suggest-row::-webkit-scrollbar {
+    display: none;
+}
+
+.col {
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    /* height: 290px; */
+    width: 300px;
+    flex-shrink: 0;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.col:hover {
+    border-radius: 10px ;
+    background-color: rgb(21, 21, 21);
+    border-color: transparent;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+.img img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.twobutton {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.add-cart {
+    background: orange;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+
+}
+
+.add-cart:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    color: orange;
+    border-color: orange;
+}
+
+.make-link {
+    background: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.make-link:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    color: green;
+    border-color: green;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+ background-color: rgb(18, 18, 18);
+    
+}
+
+.footer-column {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    /* border: 2px solid white; */
+    height: auto;
+    place-items: center;
+}
+
+.foot-col , .foot-col-icon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid white; */
+}
+
+.foot-col h1 {
+color: orange;
+    font-size: 21px;
+    margin: 7px 0;
+    font-weight: bold;
+
+}
+
+.foot-col a {
+    font-size: 19px;
+    color: rgb(169, 168, 168);
+    margin: 2px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.foot-col a:hover {
+    color: orange;
+}
+
+
+
+.foot-col-icon h1 {
+    color: orange;
+    margin: 7px 0;
+    font-size: 21px;
+}
+
+.fa-instagram, .fa-x-twitter, .fa-facebook-f{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    margin:7px 10px;
+}
+.fa-instagram:hover, .fa-x-twitter:hover , .fa-facebook-f:hover {
+    color: orange;
+}
+
+
+

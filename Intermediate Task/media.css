@@ -1,0 +1,64 @@
+@media screen and (max-width: 950px) {
+    
+    nav h1 {
+        font-size: 22px;
+    }
+
+    .list {
+        display: none;
+        align-items: start;
+    }
+
+    .search {
+        height: 24px ;
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .fa-magnifying-glass
+    {
+        height: 24px;
+        font-size: 15px;
+    }
+
+    .fa-cart-shopping {
+        font-size: 19px;
+        margin-left: 10px;
+    }
+
+    .menu{
+        display: block;
+        margin-left: 10px;
+      
+    }
+
+    .list.active {
+        display: block;
+     text-align: start;
+margin-left: 50px;        
+    }
+
+    .list.active button {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .active1 {
+        display: none;
+    }
+
+    .nav-list .active2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+
+     .footer-column {
+    grid-template-columns: repeat(1, 1fr);
+
+     }   
+
+
+}
